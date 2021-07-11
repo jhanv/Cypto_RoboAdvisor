@@ -1,17 +1,17 @@
 # Cypto_RoboAdvisor
 
-## 1 PROBLEM
+## 1 Problem
 
 The central problem of this paper is to analyse the cryptomarket  and see if a deep learning model can predict the fluctuation of prices in conjunction with sentiment data. To this end, we hope to construct a few models of varying complexity to help learn the patterns (if any) and help eliminate some of the uncertainty of this market. We believe that crypto currencies would have a prominent position in the future of finance and this paper would shed light into how people view the currency.  
 
-## 2 INTRODUCTION
+## 2 Introduction
 
 It is well known that the market is a volatile beast. The crypto market is specifically more volatile and often guided by public sentiment. 
 Our interest in cryptocurrencies stem from the limitation of conventional currencies. Conventional credit and cast is often used to make transactions but it is overly controlled and only sustains small transfers of money. To this end, we believe cryptocurrencies have an important role to play in our future. 
 Researches have long been interested in predicting the prices of cryptocurrencies using simple models like linear regression and ARIMA. In our project we tried three models of differing complexities to see how well it would do. The models we used are: MLP, Transformers and LSTM.
 For the data we have used prices from different exchanges over the years and additional data from google trends, reddit and twitter. 
 
-## 3 DATA ENGINEERING
+## 3 Data Engineering
 
 ### 3.1 Data Extraction
 
@@ -35,7 +35,7 @@ Prediction day: The number of days in the future that the model attempts to pred
 
 For every model, we split the data into 80%, 10%, and 10% for the training, validation, and testing datasets, respectively. The time series data is not shuffled before splitting it into the training, validation, and testing datasets. In other words, the data from 2014 to around mid 2018 was used for training, mid 2018 to early 2019 for validation, and early to late 2019 for testing. This split up will best test whether historical correlations will carry over to the future. Shuffling the data would have probably led to artificially inflated testing results. 
 
-## 4 MODELS
+## 4 Models
 
 We experimented with three models, MLP, LSTM and Transformers
 
