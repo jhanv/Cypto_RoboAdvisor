@@ -39,11 +39,11 @@ For every model, we split the data into 80%, 10%, and 10% for the training, vali
 
 We experimented with three models, MLP, LSTM and Transformers
 
-### 4.1 MLP MODEL
+### 4.1 MLP Model
 
 The first model that we tried was the simplest model option: a MLP model. Since a MLP model does not have any inbuilt time-series attention mechanism, it is the simplest model that could be used for our task. After experimentation and hypertuning, we decided on using ReLU activation, MSE loss, Adam optimization, and a learning rate of around 3e-5. 
 
-### 4.2 TRANSFORMER:
+### 4.2 Transformer:
 
 The next model under consideration was a transformer model. A transformer model is a neural network that uses self-attention to give higher weights to the relevant parts of the time series data that make it easier for the prediction. We will be using a Multi head attention layer which will consist of Single head attention layer all constructed using Keras from Tensorflow.
 
@@ -76,7 +76,7 @@ The complete data while training included the difference time-series data for pr
 
 Training was done for 35 epochs which takes around 2-5minutes.
 
-### 4.3 LONG SHORT TERM MEMORY MODEL (LSTM):
+### 4.3 Long Short Term memory (LSTM):
 
 LSTM models are chosen since they are powerful sequence predictions because they are able to store past data. The assumption was that LSTM would be better at extracting the long term patterns that predict the price. 
 
